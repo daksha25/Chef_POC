@@ -13,4 +13,13 @@ import hudson.slaves.EnvironmentVariablesNodeProperty.Entry;
                     "agent-node-label",
                     new SSHLauncher("10.11.28.124",22,"root","root123","","","","",""),
                     new RetentionStrategy.Always())
+  Slave slave1 = new DumbSlave(
+                    "agent-node1","Agent node description",
+                    "/home/daksha",
+                    "2",
+                    Node.Mode.NORMAL,
+                    "agent-node-label",
+                    new SSHLauncher("10.11.28.124",22,"root","root123","","","","",""),
+                    new RetentionStrategy.Always())
          Jenkins.instance.addNode(slave)
+		 Jenkins.instance.addNode(slave1)
