@@ -19,7 +19,7 @@ import hudson.slaves.EnvironmentVariablesNodeProperty.Entry;
                     "2",
                     Node.Mode.NORMAL,
                     "agent-node-label",
-                    new SSHLauncher("10.11.28.124",22,"root","root123","","","","",""),
+                    new SSHLauncher("10.11.31.236",22,"root","root123","","","","",""),
                     new RetentionStrategy.Always())
          Jenkins.instance.addNode(slave)
 		 Jenkins.instance.addNode(slave1)
