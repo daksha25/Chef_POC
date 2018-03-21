@@ -5,6 +5,6 @@ import hudson.plugins.sshslaves.*
 import java.util.ArrayList;
 
 Slave slave = new DumbSlave(Name,description,Slave_path,noofexecutors,Node.Mode.NORMAL,
-                    Labels,new SSHLauncher(Host,22,"root",pass," "," "," "," "," "),
+                    Labels,new SSHLauncher(Host,22,username,pass," "," "," "," "," "),
                     new RetentionStrategy.Always())
  Jenkins.instance.addNode(slave)
